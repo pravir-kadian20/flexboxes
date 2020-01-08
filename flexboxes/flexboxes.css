@@ -1,0 +1,73 @@
+.container{
+    background-color:lightsalmon;
+    height:600px;
+    display: flex;
+    /*flex-direction:row; this is default*/
+    /*flex-direction: row-reverse;*/
+    /*flex-direction:column;*/
+    /*flex-direction:column-reverse;*/
+    flex-direction:row;
+    /*flex-wrap:nowrap; this is the default*/
+    /*flex-wrap:wrap-reverse;*/
+    flex-wrap:wrap;
+    /*justify-content:end;*/
+    /*justify-content:space-between;*/
+    justify-content:space-around;
+    /*justify-content:start; this is the default*/
+    /*align-items:flex-start; this is default*/
+    /*align-items:flex-end;*/
+    align-items:center;
+    /*align-content:flex-start;this is default*/
+    /*align-content: flex-end;*/
+    /*align-content:center;*/
+    /*align-content:space-around;*/
+    align-content:space-between;
+}
+
+.containers{
+    background-color: limegreen;
+    height:600px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items:center;
+
+}
+
+.items{
+    background-color: magenta;
+    height:60px;
+    width:60px;
+    padding:20px;
+    font-size:40px;
+    margin:20px;
+    flex-shrink:10;
+}
+
+#items5{
+    flex-shrink:1;
+    align-self:flex-start;
+}
+
+.item{
+    margin:20px;
+    background-color: lightgreen;
+    width:60px;
+    height:60px;
+    padding:20px;
+    font-size:40px;
+    flex-grow:1; /*this would allow the items to fill up the screen*/
+}
+
+#item2{
+    order:0;/*this is the default order*/
+}
+
+#item1{
+    order:1;
+    flex-grow:2;/*grows 2 times the size as fex-grow value 1*/
+}
+#item4{
+    order:-1;
+}
